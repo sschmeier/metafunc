@@ -1,0 +1,7 @@
+__program__ = "metafunc"
+__version__ = "0.1.0"
+__date__ = "20200102"
+__author__ = "Sebastian Schmeier"
+__email__ = "s.schmeier@pm.me"
+__url__ = "https://github.com/sschmeier/metafunc"
+__license__ = "MIT license"

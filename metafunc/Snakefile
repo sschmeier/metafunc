@@ -1,0 +1,24 @@
+from os.path import join
+
+name = config['name']
+DIR_RES = join(config['resultdir'], "results")
+
+rule all:
+     input:
+        join(DIR_RES, "results.txt")
+
+
+rule target1:
+     output:
+        temp(join(DIR_RES, "hello.txt"))
+     shell:
+        "echo hello {name} > {output}"
+
+
+rule target2:
+     input: 
+        join(DIR_RES, "hello.txt")
+     output:
+        join(DIR_RES, "results.txt")
+     shell:
+        "cat {input} > {output} && echo goodbye {name} >> {output}"

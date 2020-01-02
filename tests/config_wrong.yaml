@@ -1,0 +1,20 @@
+#############################
+# run-specific parameter
+
+resultdir: "analysis"
+# missing parameter name:failed run
+#name: seb
+
+#############################
+# workflow-specific parameter
+
+# Use singularity container(s)
+# True or False
+use_singularity: False
+# if singularity is used, singularity specifc args can be submitted here
+# e.g. "--bind /mnt/data/" for binding directories to the container
+singularity_args:
+# Conda: True or False
+use_conda: False
+# maximum cores to use
+cores: 32

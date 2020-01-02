@@ -1,0 +1,7 @@
+.snakemake/
+vp/
+*.egg-info/
+*.eggs
+build/
+dist/
+.DS_Store

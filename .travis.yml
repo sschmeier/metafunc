@@ -1,0 +1,10 @@
+# https://docs.travis-ci.com/user/languages/python/
+language: python
+python:
+  - "3.6"
+install:
+  - pip install -r requirements_dev.txt
+  - make install
+# command to run tests
+script:
+  - make test
